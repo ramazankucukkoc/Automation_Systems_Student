@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Entities\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Courses\Command\CreateCommand\" />
+    <Folder Include="Features\Courses\Command\DeleteCommand\" />
+    <Folder Include="Features\Courses\Command\UpdateCommand\" />
+    <Folder Include="Features\Courses\Dtos\" />
+    <Folder Include="Features\Courses\Profiles\" />
+    <Folder Include="Features\Courses\Queries\GetAll\" />
+    <Folder Include="Features\Courses\Queries\GetById\" />
+    <Folder Include="Features\Courses\Rules\" />
+    <Folder Include="Features\OperationClaims\Command\DeleteOperationClaim\" />
+    <Folder Include="Features\StudentCourses\Command\CreateCommand\" />
+    <Folder Include="Features\StudentCourses\Command\DeleteCommand\" />
+    <Folder Include="Features\StudentCourses\Command\UpdateCommand\" />
+    <Folder Include="Features\StudentCourses\Dtos\" />
+    <Folder Include="Features\StudentCourses\Profiles\" />
+    <Folder Include="Features\StudentCourses\Queries\GetAll\" />
+    <Folder Include="Features\StudentCourses\Queries\GetById\" />
+    <Folder Include="Features\StudentCourses\Rules\" />
+    <Folder Include="Features\Students\Command\CreateCommand\" />
+    <Folder Include="Features\Students\Command\DeleteCommand\" />
+    <Folder Include="Features\Students\Command\UpdateCommand\" />
+    <Folder Include="Features\Students\Dtos\" />
+    <Folder Include="Features\Students\Queries\GetById\" />
+    <Folder Include="Features\Students\Queries\GetAll\" />
+    <Folder Include="Features\Students\Rules\" />
+    <Folder Include="Features\Students\Profiles\" />
+    <Folder Include="Features\TeacherCourses\Command\CreateCommand\" />
+    <Folder Include="Features\TeacherCourses\Command\DeleteCommand\" />
+    <Folder Include="Features\TeacherCourses\Command\UpdateCommand\" />
+    <Folder Include="Features\TeacherCourses\Dtos\" />
+    <Folder Include="Features\TeacherCourses\Profiles\" />
+    <Folder Include="Features\TeacherCourses\Queries\GetAll\" />
+    <Folder Include="Features\TeacherCourses\Queries\GetById\" />
+    <Folder Include="Features\TeacherCourses\Rules\" />
+    <Folder Include="Features\Teachers\Command\CreateCommand\" />
+    <Folder Include="Features\Teachers\Command\DeleteCommand\" />
+    <Folder Include="Features\Teachers\Command\UpdateCommand\" />
+    <Folder Include="Features\Teachers\Dtos\" />
+    <Folder Include="Features\Teachers\Profiles\" />
+    <Folder Include="Features\Teachers\Queries\GetAll\" />
+    <Folder Include="Features\Teachers\Queries\GetById\" />
+    <Folder Include="Features\Teachers\Rules\" />
+    <Folder Include="Services\Students\" />
+    <Folder Include="Services\UserOperationClaims\" />
+  </ItemGroup>
+
+</Project>
