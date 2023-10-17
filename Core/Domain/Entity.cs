@@ -6,9 +6,9 @@
         public bool Active { get; set; } = true;
         public Entity()
         {
-            
+
         }
-        public Entity(int id ):this()
+        public Entity(int id) : this()
         {
             Id = id;
         }

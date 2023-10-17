@@ -13,7 +13,7 @@
 
         public MailSettings()
         {
-            
+
         }
         public MailSettings(string server, int port, string senderFullName, string senderEmail, string userName,
                            string password)

@@ -1,5 +1,6 @@
 ﻿using Application.Features.Auths.Command.Login;
 using Application.Features.Auths.Command.Register;
+using Application.Features.Auths.Dtos;
 using Application.Features.Users.Command;
 using Application.Features.Users.Dtos;
 using Application.Features.Users.Queries.GetById;
@@ -33,24 +34,17 @@ namespace WebAPI.Controllers
         {
             RegisterCommand registerCommand = new() { UserForRegisterDto = userForRegisterDto };
             var success = await Mediator.Send(registerCommand);
-            if (success == true)
-            {
-                return Ok();
-            }
-            return BadRequest();
+
+            return Ok(success);
 
         }
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] UserForLoginDto userForLoginDto)
         {
             LoginCommand registerCommand = new() { UserForLoginDto = userForLoginDto };
-            var success = await Mediator.Send(registerCommand);
+            LoginDto loginDto = await Mediator.Send(registerCommand);
 
-            if (success)
-            {
-                return Ok();
-            }
-            return BadRequest();
+            return Ok(loginDto);
 
         }
         [HttpPost]

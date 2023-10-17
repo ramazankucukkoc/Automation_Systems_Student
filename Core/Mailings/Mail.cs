@@ -13,7 +13,7 @@ namespace Core.Mailings
         public string ToEmail { get; set; }
         public Mail()
         {
-            
+
         }
         public Mail(string subject, string textBody, string htmlBody, AttachmentCollection? attachments, string toFullName, string toEmail)
         {

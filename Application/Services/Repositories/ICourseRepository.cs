@@ -5,5 +5,6 @@ namespace Application.Services.Repositories
 {
     public interface ICourseRepository : IAsyncRepository<Course>
     {
+
     }
 }

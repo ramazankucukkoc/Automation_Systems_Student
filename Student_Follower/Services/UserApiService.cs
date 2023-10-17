@@ -26,22 +26,6 @@ namespace Student_Follower.Services
             return datalist;
 
         }
-        public async Task<bool> Login(UserForLogin userForLogin)
-        {
-            string personelGiriş = JsonConvert.SerializeObject(userForLogin);
-            StringContent stringContent = new StringContent(personelGiriş, Encoding.UTF8, "application/json");
-            HttpResponseMessage httpResponseMessage = await _httpClient.PostAsync("Login", stringContent);
-            httpResponseMessage.Content = stringContent;
-            if (httpResponseMessage.IsSuccessStatusCode)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-        }
         public async Task<bool> ForgotPassword(ForgotPassword forgotPassword)
         {
             string sifreUnuttum = JsonConvert.SerializeObject(forgotPassword);
@@ -56,24 +40,17 @@ namespace Student_Follower.Services
             {
                 return false;
             }
-            
+
         }
-        public async Task<bool> Add(CreateUser createUser)
+        public async Task<ResponseStatusCode> Response<T>(T entity, string endpoint)
         {
-            string studentData = JsonConvert.SerializeObject(createUser);
-
+            string studentData = JsonConvert.SerializeObject(entity);
             StringContent stringContent = new StringContent(studentData, Encoding.UTF8, "application/json");
+            HttpResponseMessage httpResponseMessage = await _httpClient.PostAsync(endpoint, stringContent);
+            int statusCode = (int)httpResponseMessage.StatusCode;
+            string responseContent = await httpResponseMessage.Content.ReadAsStringAsync();
+            return new ResponseStatusCode() { StatusCode = statusCode, Content = responseContent };
 
-            HttpResponseMessage httpResponseMessage = await _httpClient.PostAsync("Register", stringContent);
-            if (httpResponseMessage.IsSuccessStatusCode)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
         }
-       
     }
 }

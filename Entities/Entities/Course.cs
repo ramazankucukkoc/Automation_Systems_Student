@@ -1,14 +1,8 @@
 ﻿using Core.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Course:Entity
+    public class Course : Entity
     {
         public string Name { get; set; }
         public string Code { get; set; }
@@ -19,7 +13,7 @@ namespace Domain.Entities
         {
             StudentCourses = new HashSet<StudentCourse>();
         }
-        public Course(int id,string name,string code,int hour):this()
+        public Course(int id, string name, string code, int hour) : this()
         {
             Id = id;
             Name = name;

@@ -1,6 +1,4 @@
-﻿using Application.Features.Auths.Command.Login;
-using Application.Features.UserOperationClaims.Command.CreateUserOperationClaim;
-using Microsoft.AspNetCore.Http;
+﻿using Application.Features.UserOperationClaims.Command.CreateUserOperationClaim;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

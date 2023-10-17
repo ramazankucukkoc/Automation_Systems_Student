@@ -27,14 +27,14 @@ namespace Core.Mailings
                 TextBody = mail.TextBody,
                 HtmlBody = mail.HtmlBody,
             };
-           if(mail.Attachments !=null)
-                foreach(MimeEntity? attachment in mail.Attachments)
+            if (mail.Attachments != null)
+                foreach (MimeEntity? attachment in mail.Attachments)
                     builder.Attachments.Add(attachment);
 
-           email.Body=builder.ToMessageBody();
+            email.Body = builder.ToMessageBody();
             using SmtpClient smtp = new();
             await smtp.ConnectAsync(settings.Server, settings.Port, false);
-            await smtp.AuthenticateAsync(settings.UserName, settings.Password); 
+            await smtp.AuthenticateAsync(settings.UserName, settings.Password);
             await smtp.SendAsync(email);
             await smtp.DisconnectAsync(false);
 

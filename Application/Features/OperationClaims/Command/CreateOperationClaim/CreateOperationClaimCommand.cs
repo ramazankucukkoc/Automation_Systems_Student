@@ -18,9 +18,9 @@ namespace Application.Features.OperationClaims.Command.CreateOperationClaim
             private readonly IMapper _mapper;
 
             public CreateOperationClaimCommandHandler(IOperationClaimRepository repository,
-                OperationClaimBusinessRules operationClaimBusinessRules,IMapper mapper)
+                OperationClaimBusinessRules operationClaimBusinessRules, IMapper mapper)
             {
-                _mapper =mapper;
+                _mapper = mapper;
                 _repository = repository;
                 _operationClaimBusinessRules = operationClaimBusinessRules;
             }
@@ -32,7 +32,7 @@ namespace Application.Features.OperationClaims.Command.CreateOperationClaim
                 {
                     return $"Daha önce eklenmiş rol {request.OperationClaimDto.Name}";
                 }
-                OperationClaim operationClaim =_mapper.Map<OperationClaim>(request.OperationClaimDto);
+                OperationClaim operationClaim = _mapper.Map<OperationClaim>(request.OperationClaimDto);
                 await _repository.AddAsync(operationClaim);
                 return "İşlem Başarılı şekilde eklendi";
             }

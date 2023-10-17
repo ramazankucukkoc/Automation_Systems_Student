@@ -10,6 +10,8 @@ namespace Persistence.Repositories
         public CourseRepository(AppDbContext context) : base(context)
         {
         }
+
+
     }
 
 }

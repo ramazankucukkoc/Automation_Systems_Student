@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Core.Application.Extensions
+﻿namespace Core.Application.Extensions
 {
     public static class RandomPasswordExtensions
     {

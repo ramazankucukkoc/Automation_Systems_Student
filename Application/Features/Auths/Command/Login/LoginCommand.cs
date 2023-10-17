@@ -1,42 +1,45 @@
-﻿using Application.Features.Auths.Rules;
+﻿using Application.Features.Auths.Dtos;
+using Application.Features.Auths.Rules;
+using Application.Services.Auths;
+using Application.Services.Repositories;
 using Application.Services.Users;
-using AutoMapper;
 using Core.Domain;
+using Core.Security.Jwt;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 
 namespace Application.Features.Auths.Command.Login
 {
-    public class LoginCommand:IRequest<bool>
+    public class LoginCommand : IRequest<LoginDto>
     {
         public UserForLoginDto UserForLoginDto { get; set; }
 
-        public class LoginCommandHandler : IRequestHandler<LoginCommand, bool>
+        public class LoginCommandHandler : IRequestHandler<LoginCommand, LoginDto>
         {
             private readonly IUserService _userService;
             private readonly AuthBusinessRules _authBusinessRules;
+            private readonly IAuthService _authService;
 
-            public LoginCommandHandler(IUserService userService, AuthBusinessRules authBusinessRules) 
+            public LoginCommandHandler(IUserService userService, AuthBusinessRules authBusinessRules, IAuthService authService
+              )
             {
-                _authBusinessRules = authBusinessRules;
                 _userService = userService;
+                _authBusinessRules = authBusinessRules;
+                _authService = authService;
             }
 
-            public async Task<bool> Handle(LoginCommand request, CancellationToken cancellationToken)
+            public async Task<LoginDto> Handle(LoginCommand request, CancellationToken cancellationToken)
             {
+
                 User user = await _userService.GetByEmail(request.UserForLoginDto.Email);
 
-                if (user == null)
-                {
-                    return false;
-                }
+                await _authBusinessRules.UserShouldBeExists(user);
+
                 await _authBusinessRules.UserPasswordShouldBeMatch(user.Id, request.UserForLoginDto.Password);
 
-                return true;
+                AccessToken accessToken = await _authService.CreateAccessToken(user);
+
+                return new LoginDto() { AccessToken = accessToken };
             }
         }
 

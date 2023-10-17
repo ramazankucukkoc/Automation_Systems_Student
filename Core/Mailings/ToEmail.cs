@@ -6,9 +6,9 @@
         public string FullName { get; set; }
         public ToEmail()
         {
-            
+
         }
-        public ToEmail(string email,string fullName)
+        public ToEmail(string email, string fullName)
         {
             Email = email;
             FullName = fullName;

@@ -8,7 +8,7 @@ using MediatR;
 
 namespace Application.Features.Users.Command
 {
-    public class ForgotPasswordCommand:IRequest<bool>
+    public class ForgotPasswordCommand : IRequest<bool>
     {
         public ForgotPasswordDto ForgotPasswordDto { get; set; }
         public class ForgotPasswordCommandHandler : IRequestHandler<ForgotPasswordCommand, bool>
@@ -41,7 +41,7 @@ namespace Application.Features.Users.Command
                     {
                         ToEmail = user.Email,
                         ToFullName = $"{user.FirstName} ${user.LastName}",
-                        Subject = "Forgot Password changed password ECommerce - Ramo",
+                        Subject = $"Şifreniz değiştirilmiştir Ögrenci Takip Otomasyonu -{user.FirstName + " " + user.LastName}",
                         TextBody = "Teşekkürler",
                         HtmlBody = $"Şifre değiştirme işlemleri <strong>Başarılı şekilde bitti yeni şifreiniz:{generatedPassword}</strong>"
                     });

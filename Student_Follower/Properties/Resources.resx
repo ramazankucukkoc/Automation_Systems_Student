@@ -118,14 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="user-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="504d9fc6-1893-4f6d-a15a-f4e4ed40ba2f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\504d9fc6-1893-4f6d-a15a-f4e4ed40ba2f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ywpp_iurg_220311" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ywpp_iurg_220311.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="personle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personle2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete-all-participants" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-all-participants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back-24838_6401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back-24838_6401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-student-assistant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-student-assistant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngwing.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back-24838_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back-24838_640.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-student" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-student.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +142,28 @@
   <data name="user-admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-student-assistant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-student-assistant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ders.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngwing.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ywpp_iurg_220311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ywpp_iurg_220311.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-all-participants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-all-participants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osgb-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osgb-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cıkış" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cıkış.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cıkıis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cıkıis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

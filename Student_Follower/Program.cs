@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Student_Follower.Forms.Teachers;
+using System;
 using System.Windows.Forms;
 
 namespace Student_Follower
@@ -16,7 +14,8 @@ namespace Student_Follower
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Form1());
+            //form1 Başlayacak..
         }
     }
 }

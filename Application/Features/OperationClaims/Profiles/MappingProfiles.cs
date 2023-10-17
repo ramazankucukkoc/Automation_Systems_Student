@@ -4,7 +4,7 @@ using Core.Domain;
 
 namespace Application.Features.OperationClaims.Profiles
 {
-    public class MappingProfiles:Profile
+    public class MappingProfiles : Profile
     {
         public MappingProfiles()
         {

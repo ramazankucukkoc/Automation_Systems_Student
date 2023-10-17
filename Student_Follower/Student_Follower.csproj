@@ -48,12 +48,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.7.0.2\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.7.0.2\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.7.0.2\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.0.2\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.7.0.2\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,11 +110,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\CreateUser.cs" />
-    <Compile Include="Entities\CreateUserOperationClaim.cs" />
-    <Compile Include="Entities\ForgotPassword.cs" />
-    <Compile Include="Entities\UserForLogin.cs" />
-    <Compile Include="Entities\UserList.cs" />
+    <Compile Include="Entities\Courses\CourseAdd.cs" />
+    <Compile Include="Entities\Courses\CourseDayHourAdd.cs" />
+    <Compile Include="Entities\Courses\CourseDayHourAddlList.cs" />
+    <Compile Include="Entities\Courses\CourseDelete.cs" />
+    <Compile Include="Entities\Courses\CourseList.cs" />
+    <Compile Include="Entities\Courses\CourseStudentList.cs" />
+    <Compile Include="Entities\Courses\CourseUpdate.cs" />
+    <Compile Include="Entities\Responses\BusinessErrorResponse.cs" />
+    <Compile Include="Entities\Responses\ValidationErrorResponse.cs" />
+    <Compile Include="Entities\Student\StudentCourseMath.cs" />
+    <Compile Include="Entities\Teachers\AddTeacher.cs" />
+    <Compile Include="Entities\Teachers\DeleteTeacher.cs" />
+    <Compile Include="Entities\Teachers\GetByTCNo.cs" />
+    <Compile Include="Entities\Teachers\GetByTeacher.cs" />
+    <Compile Include="Entities\Teachers\ListTeacher.cs" />
+    <Compile Include="Entities\Teachers\UpdateTeacher.cs" />
+    <Compile Include="Entities\User\AccessToken.cs" />
+    <Compile Include="Entities\Student\DeleteStudent.cs" />
+    <Compile Include="Entities\User\RegisteredDto.cs" />
+    <Compile Include="Entities\User\LoginDto.cs" />
+    <Compile Include="Entities\User\RegisterUser.cs" />
+    <Compile Include="Entities\User\CreateUserOperationClaim.cs" />
+    <Compile Include="Entities\Responses\ExceptionMessage.cs" />
+    <Compile Include="Entities\User\ForgotPassword.cs" />
+    <Compile Include="Entities\Responses\ResponseStatusCode.cs" />
+    <Compile Include="Entities\Student\AddStudent.cs" />
+    <Compile Include="Entities\Student\ListStudent.cs" />
+    <Compile Include="Entities\Student\UpdateStudent.cs" />
+    <Compile Include="Entities\User\UserForLogin.cs" />
+    <Compile Include="Entities\User\UserList.cs" />
+    <Compile Include="Entities\Responses\ValidationError.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,39 +153,153 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Forms\Courses\CoursePlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Forms\Courses\CoursePlan.Designer.cs">
+      <DependentUpon>CoursePlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Forms\Courses\CoursesNotes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Forms\Courses\CoursesNotes.Designer.cs">
+      <DependentUpon>CoursesNotes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Müdürİslemleri\OgrenciListele.cs">
+    <Compile Include="Forms\Students\StudentDataAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Müdürİslemleri\OgrenciListele.Designer.cs">
-      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    <Compile Include="Forms\Students\StudentDataAnalysis.Designer.cs">
+      <DependentUpon>StudentDataAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentSearch.Designer.cs">
+      <DependentUpon>StudentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherAdd.Designer.cs">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherDelete.Designer.cs">
+      <DependentUpon>TeacherDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherDeletePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherDeletePopUp.Designer.cs">
+      <DependentUpon>TeacherDeletePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherList.Designer.cs">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherSearch.Designer.cs">
+      <DependentUpon>TeacherSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherUpdate.Designer.cs">
+      <DependentUpon>TeacherUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherUpdatePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherUpdatePopUp.Designer.cs">
+      <DependentUpon>TeacherUpdatePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\Ogrenciİslemeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\Ogrenciİslemeleri.Designer.cs">
+      <DependentUpon>Ogrenciİslemeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\PersonelIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\PersonelIslemleri.Designer.cs">
+      <DependentUpon>PersonelIslemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\GetByRols.cs" />
+    <Compile Include="Services\CoursesApiService.cs" />
+    <Compile Include="Services\GenericApiService.cs" />
+    <Compile Include="Services\StudentApiService.cs" />
+    <Compile Include="Services\StudentCoursesApiService.cs" />
+    <Compile Include="Services\TeacherApiService.cs" />
     <Compile Include="Services\UserApiService.cs" />
     <Compile Include="Services\UserOperationClaimService.cs" />
-    <Compile Include="SifreDegistir.cs">
+    <Compile Include="Forms\Users\SifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SifreDegistir.Designer.cs">
-      <DependentUpon>SifreDegistir.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SifremiUnuttum.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SifremiUnuttum.Designer.cs">
+    <Compile Include="Forms\Users\SifremiUnuttum.Designer.cs">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentAdd.Designer.cs">
+      <DependentUpon>StudentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentDelete.Designer.cs">
+      <DependentUpon>StudentDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentDeletePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentDeletePopUp.Designer.cs">
+      <DependentUpon>StudentDeletePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentUpdate.Designer.cs">
+      <DependentUpon>StudentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentUpdatePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentUpdatePopUp.Designer.cs">
+      <DependentUpon>StudentUpdatePopUp.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -122,14 +307,53 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Courses\CoursePlan.resx">
+      <DependentUpon>CoursePlan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Courses\CoursesNotes.resx">
+      <DependentUpon>CoursesNotes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Müdürİslemleri\OgrenciListele.resx">
-      <DependentUpon>OgrenciListele.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Students\StudentDataAnalysis.resx">
+      <DependentUpon>StudentDataAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentSearch.resx">
+      <DependentUpon>StudentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherAdd.resx">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherDelete.resx">
+      <DependentUpon>TeacherDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherDeletePopUp.resx">
+      <DependentUpon>TeacherDeletePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherList.resx">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherSearch.resx">
+      <DependentUpon>TeacherSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherUpdate.resx">
+      <DependentUpon>TeacherUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherUpdatePopUp.resx">
+      <DependentUpon>TeacherUpdatePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\Ogrenciİslemeleri.resx">
+      <DependentUpon>Ogrenciİslemeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\PersonelIslemleri.resx">
+      <DependentUpon>PersonelIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,8 +365,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SifremiUnuttum.resx">
+    <EmbeddedResource Include="Forms\Users\SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentAdd.resx">
+      <DependentUpon>StudentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentDelete.resx">
+      <DependentUpon>StudentDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentDeletePopUp.resx">
+      <DependentUpon>StudentDeletePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentUpdate.resx">
+      <DependentUpon>StudentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentUpdatePopUp.resx">
+      <DependentUpon>StudentUpdatePopUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -193,6 +435,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-24838_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-24838_6401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\StudentCourses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ders.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\504d9fc6-1893-4f6d-a15a-f4e4ed40ba2f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osgb-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkış.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkıis.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
